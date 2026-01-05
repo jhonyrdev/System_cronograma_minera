@@ -40,4 +40,19 @@ El sistema permite visualizar los estados diarios de cada supervisor y detectar 
 
 1. Clonar el repositorio  
    ```bash
-   git clone https://github.com/tuusuario/cronograma-supervisores.git
+   git clone https://github.com/jhonyrdev/System_cronograma_minera.git
+   ```
+2. Instalar dependencias
+   ```bash
+   npm i
+   ```
+   ```bash
+   pnpm i
+   ```
+4. Ejecucion
+   ```bash
+   npm run dev
+   ```
+   ```bash
+   pnpm run dev
+   ```
