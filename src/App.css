@@ -1,0 +1,293 @@
+/* Variables CSS */
+:root {
+  --color-primary: #2c3e50;
+  --color-secondary: #3498db;
+  --color-success: #27ae60;
+  --color-danger: #e74c3c;
+  --color-warning: #f1c40f;
+  --color-gray: #95a5a6;
+  --color-light: #ecf0f1;
+  --color-dark: #1a252f;
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --border-radius: 8px;
+}
+
+/* App Container */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #fffbf4;
+}
+
+/* Header */
+.app-header {
+  background: var(--color-dark);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.app-header .subtitle {
+  margin: 0.5rem 0 0;
+  opacity: 0.8;
+  font-size: 1rem;
+}
+
+/* Main Content */
+.app-main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Controls Section */
+.controls-section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.btn-generate {
+  background: linear-gradient(135deg, var(--color-secondary) 0%, #2980b9 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-md);
+}
+
+.btn-generate:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+}
+
+.btn-generate:active {
+  transform: translateY(-1px);
+}
+
+/* Schedule Section */
+.schedule-section {
+  background: white;
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-md);
+  margin-bottom: 1.5rem;
+  overflow-x: auto;
+}
+
+.schedule-section h2 {
+  margin: 0 0 1rem;
+  color: var(--color-primary);
+  font-size: 1.5rem;
+}
+
+/* Schedule Table */
+.schedule-table-container {
+  overflow-x: auto;
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.schedule-table th,
+.schedule-table td {
+  padding: 10px 8px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.schedule-table th {
+  background: var(--color-primary);
+  color: white;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.supervisor-header {
+  min-width: 100px;
+}
+
+.day-header {
+  min-width: 50px;
+  font-size: 0.8rem;
+}
+
+.supervisor-label {
+  background: var(--color-light);
+  text-align: left !important;
+  padding-left: 12px !important;
+}
+
+.badge-principal {
+  font-size: 0.7rem;
+  color: var(--color-secondary);
+  font-weight: normal;
+}
+
+.supervisor-row:hover {
+  background-color: rgba(52, 152, 219, 0.05);
+}
+
+.count-row td {
+  background: #f8f9fa;
+}
+
+/* Schedule Cells */
+.schedule-cell {
+  transition: transform 0.2s ease;
+}
+
+.schedule-cell:hover {
+  transform: scale(1.1);
+  z-index: 10;
+  position: relative;
+}
+
+/* Conflicts Section */
+.conflicts-section {
+  margin-bottom: 1.5rem;
+}
+
+.conflict-alert {
+  background: linear-gradient(135deg, #fee 0%, #fdd 100%);
+  border: 2px solid var(--color-danger);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  color: var(--color-danger);
+}
+
+.conflict-alert h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.conflict-alert p {
+  margin: 0.5rem 0 0;
+}
+
+/* Legend Section */
+.legend-section {
+  background: white;
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-md);
+  margin-bottom: 1.5rem;
+}
+
+.legend-section h3 {
+  margin: 0 0 1rem;
+  color: var(--color-primary);
+  font-size: 1.1rem;
+}
+
+.legend-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.legend-color {
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  display: inline-block;
+  box-shadow: var(--shadow-sm);
+}
+
+/* Rules Section */
+.rules-section {
+  background: white;
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-md);
+}
+
+.rules-section h3 {
+  margin: 0 0 1rem;
+  color: var(--color-primary);
+  font-size: 1.1rem;
+}
+
+.rules-section ul {
+  margin: 0;
+  padding-left: 1.5rem;
+  color: #555;
+}
+
+.rules-section li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+/* Footer */
+.app-footer {
+  background: var(--color-dark);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.app-footer p {
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .app-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .app-main {
+    padding: 1rem;
+  }
+
+  .btn-generate {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .schedule-table {
+    font-size: 0.75rem;
+  }
+
+  .schedule-table th,
+  .schedule-table td {
+    padding: 6px 4px;
+  }
+
+  .legend-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 425px) {
+  
+  .legend-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
